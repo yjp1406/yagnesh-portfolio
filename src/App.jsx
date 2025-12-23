@@ -20,7 +20,7 @@ function Home() {
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-dvh flex flex-col bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+      <div className="min-h-dvh flex flex-col bg-slate-950 text-slate-100 transition-colors duration-300">
         <Navbar />
         <div className="flex-1">
           <Routes>
