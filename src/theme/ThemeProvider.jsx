@@ -10,6 +10,11 @@ export function ThemeProvider({ children }) {
     []
   )
 
+  // Force dark mode on the html element
+  if (typeof window !== 'undefined') {
+    document.documentElement.classList.add('dark')
+  }
+
   return (
     <ThemeContext.Provider value={value}>
       {children}

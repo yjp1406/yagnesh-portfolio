@@ -80,16 +80,20 @@ html {
 }
 
 .badge {
-  @apply inline-flex items-center rounded-full border border-white/10 bg-[#0f1724]/50 px-3 py-1 text-sm text-white/90 shadow-sm backdrop-blur transition-colors hover:border-pink-500 hover:text-pink-400;
+  @apply inline-flex items-center rounded-full border border-gray-300 bg-gray-100 px-3 py-1 text-sm text-gray-700 shadow-sm backdrop-blur transition-colors hover:border-pink-500 hover:text-pink-600;
 }
 
-.btn {
-  @apply inline-flex items-center justify-center rounded-md px-4 py-2 font-medium transition-all duration-200;
+.badge {
+  @apply inline-flex items-center rounded-full border border-white/10 bg-[#0f1724]/50 px-3 py-1 text-sm text-white/90 shadow-sm backdrop-blur transition-colors hover:border-pink-500 hover:text-pink-400;
 }
 .btn-primary {
   /* CTA gradient: pink -> violet -> indigo */
   @apply bg-gradient-to-r from-pink-500 via-violet-500 to-indigo-600 text-white shadow-lg shadow-pink-500/20 hover:brightness-105;
 }
+.btn-outline {
+  @apply border border-gray-300 bg-transparent text-gray-700 hover:border-pink-500 hover:text-pink-600;
+}
+
 .btn-outline {
   @apply border border-white/10 bg-transparent text-white/90 hover:border-pink-500 hover:text-pink-400;
 }
@@ -98,8 +102,7 @@ html {
   @apply rounded-3xl border border-white/6 bg-[#0f1724]/60 p-6 shadow-lg ring-1 ring-white/5 backdrop-blur;
 }
 
-/* gradient text utility for headings/brand */
-.text-gradient {
+.gradient-text {
   background-image: linear-gradient(90deg, #fb7185 0%, #8b5cf6 50%, #6366f1 100%);
   -webkit-background-clip: text;
   background-clip: text;
