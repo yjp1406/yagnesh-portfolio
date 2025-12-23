@@ -16,10 +16,18 @@
     <meta name="twitter:title" content="Yagnesh Patel — Software Engineer" />
     <meta name="twitter:description" content="Building reliable systems and scalable backend solutions." />
     <meta name="twitter:image" content="/vite.svg" />
-    <script>
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="color-scheme" content="dark" />
+
+  <script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.classList.add('dark')
       document.documentElement.style.colorScheme = 'dark'
-    </script>
+    } else {
+      document.documentElement.style.colorScheme = 'light'
+    }
+  </script>
+
   </head>
   <body>
     <div id="root"></div>
