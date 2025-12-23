@@ -10,7 +10,6 @@
     <meta name="theme-color" content="#0a0a0a" />
     <meta name="color-scheme" content="dark" />
     <link rel="icon" type="image/svg+xml" href="/yp_logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yagnesh Patel — Software Engineer | Backend & Fullstack Developer</title>
     <meta name="description" content="Portfolio of Yagnesh Patel, a software engineer specializing in backend and full-stack development. Building reliable systems and scalable backend solutions." />
     <meta name="theme-color" content="#0a0a0a" />
@@ -23,9 +22,22 @@
     <meta name="twitter:title" content="Yagnesh Patel — Software Engineer" />
     <meta name="twitter:description" content="Building reliable systems and scalable backend solutions." />
     <meta name="twitter:image" content="/vite.svg" />
-
-  <!-- <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    
+    <style>
+      /* CRITICAL: prevent white flash */
+      html, body {
+        background-color: #0a0a0a !important;
+        margin: 0;
+        padding: 0;
+      }
+      #root {
+        background-color: #0a0a0a;
+        min-height: 100vh;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script>
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.classList.add('dark')
       document.documentElement.style.colorScheme = 'dark'
     } else {
