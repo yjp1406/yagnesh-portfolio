@@ -6,8 +6,8 @@ import { ThemeProvider } from './theme/ThemeProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider>
+    <div className="bg-neutral-950 text-neutral-100 min-h-screen">
       <App />
-    </ThemeProvider>
-  </StrictMode>,
+    </div>
+  </StrictMode>
 )

@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      document.documentElement.classList.add("dark");
-      document.documentElement.style.colorScheme = "dark";
+      const d = document.documentElement;
+      d.className = "dark";
+      d.style.backgroundColor = "#0a0a0a";
+      d.style.colorScheme = "dark";
     </script>
     <meta name="color-scheme" content="dark only" />
 
@@ -33,16 +35,21 @@
     />
     <meta name="twitter:image" content="/vite.svg" />
 
-    <style>
-      html,
-      body,
-      #root {
-        background-color: #0a0a0a !important;
-        color: #e5e7eb;
-        min-height: 100%;
-        margin: 0;
-      }
-    </style>
+  <style>
+    :root {
+      color-scheme: dark !important;
+    }
+
+    html, body, #root {
+      background: #0a0a0a !important;
+      color: #e5e7eb !important;
+    }
+
+    * {
+      color-scheme: dark !important;
+    }
+  </style>
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <script>
