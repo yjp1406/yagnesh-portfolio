@@ -25,6 +25,18 @@ export default function Experience() {
       <div className="container grid gap-10">
         <SectionHeading eyebrow="Career" title="Experience" />
         <div className="relative grid gap-6 before:absolute before:left-4 before:top-3 before:h-full before:w-px before:bg-gradient-to-b before:from-teal-200 before:via-teal-300/60 before:to-transparent dark:before:from-teal-500/40 dark:before:via-teal-500/10">
+        <ExperienceItem
+            org="Sacesta Technologies"
+            role="SDE"
+            period="Nov 2024 – Present"
+            bullets={[
+              'Built and maintained server-side logic and backend services for a multi-role web platform, implementing core workflows around entity lifecycles, access control, validation, and data consistency using Node.js, Express, and MongoDB.',
+              'Implemented real-time features using WebSockets (Socket.io) and backend flows for communication and QR-based check-ins, supporting 300–500 weekly active users across 10+ live events with a focus on performance and reliability.',
+              'Built and maintained backend workflows for a global eSIM commerce platform supporting 2 primary roles (admin, customer) and 190+ countries, handling plan management, country listings, pricing, and order lifecycles with a focus on data correctness and scalability.',
+              'Implemented secure purchase and fulfillment flows using Stripe and PayPal, processing hundreds of transactions, and automating QR-based eSIM delivery and installation instructions via email and user dashboards.',
+              'Designed backend data models and APIs to support 10+ languages, multi-currency pricing, and region-specific plan configurations, with all localized content and metadata served dynamically from the backend.'
+            ]}
+          />
           <ExperienceItem
             org="Medkart Pharmacy"
             role="Jr. Fullstack Developer"
